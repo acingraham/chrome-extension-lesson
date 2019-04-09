@@ -1,0 +1,25 @@
+{
+  "description": "Improves every site with images",
+  "version": "0.0.1",
+  "name": "Cooper 1",
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "js/jquery.js",
+        "js/script.js"
+      ]
+    }
+  ],
+  "icons": {
+    "128": "img/icon.png"
+  },
+  "web_accessible_resources": [
+    "img/*"
+  ],
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
